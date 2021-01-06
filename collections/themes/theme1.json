@@ -1,0 +1,36 @@
+{
+  "id": "T1",
+  "name": "theme 1",
+  "style": {
+    "colors": {
+      "$COLOR_LIGHT": "#ee8877",
+      "$COLOR_GREY_4": "#33dd44",
+      "$COLOR_GREY_5": "#3344ee"
+    },
+    "buttons": {
+      "$BUTTON_CASE": "uppercase",
+      "$BUTTON_STATE_DEFAULT": {
+        "$buttonLabelCOLOR": "#ff0011",
+        "$buttonLabelAlign": "center",
+        "$buttonRadius": "rounded",
+        "$buttonBorder": {
+          "$$name": "BorderDesignToken",
+          "$borderWidth": 10,
+          "$borderCOLOR": null,
+          "$borderOpacity": 0
+        }
+      },
+      "$BUTTON_STATE_FOCUSED": {
+        "$buttonLabelColor": "#0011ff",
+        "$buttonLabelAlign": "center",
+        "$buttonRadius": "rounded",
+        "$buttonBorder": {
+          "$$name": "BorderDesignToken",
+          "$borderWidth": 10,
+          "$borderColor": "#0011ff",
+          "$borderOpacity": 255
+        }
+      }
+    }
+  }
+}
