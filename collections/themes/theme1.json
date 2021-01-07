@@ -3,9 +3,10 @@
   "name": "theme 1",
   "style": {
     "colors": {
-      "$COLOR_LIGHT": "#ee8877",
-      "$COLOR_GREY_4": "#33dd44",
-      "$COLOR_GREY_5": "#3344ee"
+      "$COLOR_DARK": "#e9e9ea",
+      "$COLOR_LIGHT": "#ddccdd",
+      "$COLOR_GREY_4": "#020206",
+      "$COLOR_GREY_5": "#656570"
     },
     "buttons": {
       "$BUTTON_CASE": "uppercase",
