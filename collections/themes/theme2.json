@@ -2,25 +2,23 @@
   "id": "T2",
   "name": "theme 2",
   "style": {
-    "colors": {
-      "$COLOR_LIGHT": "#ffddee",
-      "$COLOR_GREY_4": "#aabb99",
-      "$COLOR_GREY_5": "#887766"
+    "$COLOR_DARK": "#e9e9ea",
+    "$COLOR_LIGHT": "#aabb99",
+    "$COLOR_GREY_4": "#4455ff",
+    "$COLOR_GREY_5": "#887766",
+    "$BUTTON_CASE": "lowercase",
+    "$BUTTON_STATE_DEFAULT": {
+      "$buttonLabelCOLOR": "#ff0011",
+      "$buttonLabelAlign": "center",
+      "$buttonRadius": 0,
+      "$buttonBorder": {
+        "$$name": "BorderDesignToken",
+        "$borderWidth": 18,
+        "$borderCOLOR": "#ff0011",
+        "$borderOpacity": 255
+      }
     },
-    "buttons": {
-      "$BUTTON_CASE": "lowercase",
-      "$BUTTON_STATE_DEFAULT": {
-        "$buttonLabelCOLOR": "#ff0011",
-        "$buttonLabelAlign": "center",
-        "$buttonRadius": 0,
-        "$buttonBorder": {
-          "$$name": "BorderDesignToken",
-          "$borderWidth": 18,
-          "$borderCOLOR": "#ff0011",
-          "$borderOpacity": 255
-        }
-      },
-      "$BUTTON_STATE_FOCUSED": {
+    "$BUTTON_STATE_FOCUSED": {
         "$buttonLabelColor": "#0011ff",
         "$buttonLabelAlign": "center",
         "$buttonRadius": 0,
@@ -31,6 +29,5 @@
           "$borderOpacity": 128
         }
       }
-    }
   }
 }

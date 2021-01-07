@@ -2,35 +2,31 @@
   "id": "T1",
   "name": "theme 1",
   "style": {
-    "colors": {
-      "$COLOR_DARK": "#e9e9ea",
-      "$COLOR_LIGHT": "#ddccdd",
-      "$COLOR_GREY_4": "#020206",
-      "$COLOR_GREY_5": "#656570"
+    "$COLOR_DARK": "#e9e9ea",
+    "$COLOR_LIGHT": "#ddccdd",
+    "$COLOR_GREY_4": "#020206",
+    "$COLOR_GREY_5": "#656570",
+    "$BUTTON_CASE": "uppercase",
+    "$BUTTON_STATE_DEFAULT": {
+      "$buttonLabelCOLOR": "#ff0011",
+      "$buttonLabelAlign": "center",
+      "$buttonRadius": "rounded",
+      "$buttonBorder": {
+        "$$name": "BorderDesignToken",
+        "$borderWidth": 10,
+        "$borderCOLOR": null,
+        "$borderOpacity": 0
+      }
     },
-    "buttons": {
-      "$BUTTON_CASE": "uppercase",
-      "$BUTTON_STATE_DEFAULT": {
-        "$buttonLabelCOLOR": "#ff0011",
-        "$buttonLabelAlign": "center",
-        "$buttonRadius": "rounded",
-        "$buttonBorder": {
-          "$$name": "BorderDesignToken",
-          "$borderWidth": 10,
-          "$borderCOLOR": null,
-          "$borderOpacity": 0
-        }
-      },
-      "$BUTTON_STATE_FOCUSED": {
-        "$buttonLabelColor": "#0011ff",
-        "$buttonLabelAlign": "center",
-        "$buttonRadius": "rounded",
-        "$buttonBorder": {
-          "$$name": "BorderDesignToken",
-          "$borderWidth": 10,
-          "$borderColor": "#0011ff",
-          "$borderOpacity": 255
-        }
+    "$BUTTON_STATE_FOCUSED": {
+      "$buttonLabelColor": "#0011ff",
+      "$buttonLabelAlign": "center",
+      "$buttonRadius": "rounded",
+      "$buttonBorder": {
+        "$$name": "BorderDesignToken",
+        "$borderWidth": 10,
+        "$borderColor": "#0011ff",
+        "$borderOpacity": 255
       }
     }
   }
