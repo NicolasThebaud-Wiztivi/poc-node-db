@@ -12,7 +12,6 @@ const customers = [
 ];
 
 app.get('/getThemes', (request, response) => {
-    console.warn('×', Aggregator.themes);
     response.json(Aggregator.themes);
 });
 
@@ -33,22 +32,21 @@ app.post('/getCustomerTheme', (request, response) => {
 
 app.post('/setCustomerTheme', (request, response) => {
     const body = request.body;
-    console.warn('×', '[CPE ID]', body);
     customers.find(c => c.cpe === body.cpe)['themeId'] = body.id;
-    console.warn('××', customers);
+    response.send('OK');
 });
 
 app.post('/setDisplayTokenValue', (request, response) => {
     const body = request.body;
-    console.warn('×', '[SINGLE TOKEN]', body);
     const theme = Aggregator.themes.find(theme => theme.id === body.themeId);
     theme.style[body.args[0]] = body.args[1];
+    response.send('OK');
 });
 
 app.post('/setTokens', (request, response) => {
     const body = request.body;
-    console.warn('×', '[SET TOKENS]', body);
     Aggregator.themes[body.id] = body.tokens;
+    response.send('OK');
 });
 
 app.listen(1234);
