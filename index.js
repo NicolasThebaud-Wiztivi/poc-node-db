@@ -49,5 +49,12 @@ app.post('/setTokens', (request, response) => {
     response.send('OK');
 });
 
+app.post('/registerNewTheme', (request, response) => {
+    const body = request.body;
+    Aggregator.registerTheme(body);
+    Aggregator.themes.push(body);
+    response.send('OK');
+});
+
 app.listen(1234);
 console.warn('[HTTP] server listening on port 1234');
